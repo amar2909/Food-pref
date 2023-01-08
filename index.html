@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
     <h1>Food preference Survey-Form</h1>
     <h5>Kindly fill out this form at earliest</h5>
-    <hr/>
-</body>
+    <hr />
+    <form action="" method="post">
+      <table>
+        <tr>
+          <td>1.Name</td>
+          <td><input type="text" name="user" /></td>
+        </tr>
+        <tr>
+          <td>2.Age</td>
+          <td><input type="number" min="12" /></td>
+        </tr>
+        <tr>
+          <td>
+            3. Where do you eat mostly?
+            <input type="radio" name="location" id="home" value="home" />
+            <label for="home">At home</label>
+            <input type="radio" name="location" id="work" value="work" />
+            <label for="work">At work</label>
+            <input type="radio" id="restaurant" name="location" value="restaurant" />
+            <label for="restaurant">At restaurant</label>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>
