@@ -8,7 +8,8 @@
   <title>Document</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: rgb(239, 248, 123);
     }
 
     th,
@@ -17,32 +18,43 @@
     }
 
     label {
-      margin: 20px;
+      margin-right: 20px;
+
     }
 
     button {
       
       margin: 2px;
     }
+    .head{
+      font-size: 100px;
+      color: rgb(231, 157, 68);
+    }
+    h5{
+      font-size: 40px;
+    }
+    .tab1{
+      font-size: 50px;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Food preference Survey-Form</h1>
-  <h5>Kindly fill out this form at earliest</h5>
+  <h1 class="head">Food preference Survey-Form</h1>
+  <h5 > Kindly fill out this form at earliest</h5>
   <hr />
   <form action="" method="post">
     <table>
       <tr>
-        <td>1.Name</td>
+        <td style="color: rgb(255, 47, 47);">1.Name</td>
         <td><input type="text" name="user" /></td>
       </tr>
       <tr>
-        <td>2.Age</td>
+        <td style="color: rgb(255, 47, 47);">2.Age</td>
         <td><input type="number" min="13" /></td>
       </tr>
       <tr>
-        <td>
+        <td style="color:rgb(11, 72, 255);">
           3. Where do you eat mostly?
           <input type="radio" name="location" id="home" value="home" />
           <label for="home">At home</label>
@@ -53,14 +65,15 @@
         </td>
       </tr>
       <tr>
-        <td colspan="2">4.Specify how often</td>
+        <td colspan="2" style="color:rgb(11, 72, 255);">4.Specify how often</td>
       </tr>
       <tr>
         <td colspan="2">
-          <table style="font-size: 0.7em; border: 1px solid;">
+          <table style="font-size: 0.7em; border: 1px solid;" class="tab1">
             <thead>
               <tr>
-                <th>
+              
+                  <th></th>
 
                 <td>Everyday</td>
                 <td>Few times a week</td>
@@ -68,7 +81,7 @@
                 <td>Several times a month</td>
                 <td>Once a month</td>
                 <td>Less often than once a month</td>
-                </th>
+              
         </td>
       </tr>
       </tr>
